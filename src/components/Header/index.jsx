@@ -11,6 +11,7 @@ const MenuBarContainer = styled.header`
     border-radius: 0;
     font-size: 18px;
     font-weight: bold;
+    /* height: 120px; */
   }
 
   Button {

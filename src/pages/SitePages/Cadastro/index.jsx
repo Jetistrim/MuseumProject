@@ -83,8 +83,8 @@ const Cadastro = () => {
                     </a>
                 </div>
 
-                <div className="mb-5">
-                    <div>
+                <div>
+                    <div className="mb-5">
                         <div className="flex justify-content-between align-items-center mb-5 gap-3">
                             <FloatLabel className="w-12">
                                 <label htmlFor="nomeCompleto" className="text-900 font-medium">
@@ -158,10 +158,10 @@ const Cadastro = () => {
                         </FloatLabel>
                     </div>
 
-                    <div className="flex align-items-center justify-content-between mb-6">
+                    {/* <div className="flex align-items-center justify-content-between mb-6">
                         <div className="flex align-items-center"></div>
                         <a className="font-medium no-underline ml-2 text-blue-500 text-right cursor-pointer">Forgot your password?</a>
-                    </div>
+                    </div> */}
 
                     <Button label="Cadastre-se" icon="pi pi-user" className="w-full" />
                 </div>
