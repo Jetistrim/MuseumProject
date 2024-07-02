@@ -1,3 +1,4 @@
+import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
@@ -28,30 +29,19 @@ const AdmHeader = () => {
         }
     `;
 
-    const navigate = useNavigate();
-    const ondeIr = (local) => navigate(`/${local}`);
+    const navigate = useNavigate((local) => navigate(`/${local}`));
+    // const ondeIr = ;
 
     return (
-        <HeaderContainer className="flex">
-            <div className="logo flex justify-content-center align-items-center">
+        <HeaderContainer className="flex justify-content-between">
+            <div className="logo flex justify-content-center align-items-center ml-8">
                 <img
                     className="logo"
                     src="images/SimpleLogoEye.png"
                     onClick={() => {
-                        ondeIr("");
+                        navigate("");
                     }}
                 />
-            </div>
-
-            <div>
-                <h4>Filtro</h4>
-                <ul name="Filtro">
-                    <li>Gênero</li>
-                    <li>Cidade</li>
-                    <li>Estado</li>
-
-                    {/* botão de "não repetir pessoas" no Pannel */}
-                </ul>
             </div>
         </HeaderContainer>
     );
